@@ -8,6 +8,15 @@ This script hex edits *The Sims: Complete Collection* Sims.exe to use custom res
 3. Install DGVoodoo2 if necessary (Resolutions greater than 1920x1080 or if forced with -forceVoodoo)
 4. Copy the proper graphics files to The Sims UIGraph directory
 
+Resolutions Supported
+=====================
+
+* 3840x2160
+* 2560x1440
+* 1920x1080
+* 1366x768
+* 1280x720
+
 Usage
 =====
 
