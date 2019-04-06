@@ -1,7 +1,7 @@
 ps-sims-widescreen-fixer
 =======================
 
-This script hex edits *The Sims: Complete Collection* Sims.exe to use custom resolutions. You need the No-CD patch with MD5 hash 42F9A3E11BD1A03515C77777CB97B5BC for this script to work. Running this will:
+This script hex edits *The Sims: Complete Collection* Sims.exe to a custom resolution. You need the No-CD patch with MD5 hash 42F9A3E11BD1A03515C77777CB97B5BC for this script to work. Running this will:
 
 1. Create a backup of Sims.exe named Sims Backup.exe
 2. Hex edit Sims.exe with an accepted resolution
@@ -16,6 +16,8 @@ Requirements
 Resolutions Supported
 =====================
 
+The highest resolution I recommend is 1920x1080, any resolution larger than that makes everything too small to see clearly. If you check out the screenshots, you'll notice that the larger the resolution, the further the camera is pulled out. The fps goes down the drain starting at 2560x1440 so expect framerates in the single digits.
+
 * 3840x2160
 * 2560x1440
 * 1920x1080
@@ -29,7 +31,7 @@ Usage
 Get-Help ps-sims-widescreen-fixer.ps1
 ```
 
-**Open PowerShell as administrator**
+**Open PowerShell as administrator and enter:**
 
 ```
 .\ps-sims-widescreen-fixer.ps1 -path "C:\Program Files (x86)\Maxis\The Sims\Sims.exe" -resolution "1920x1080"
@@ -39,3 +41,8 @@ Screenshots
 ===========
 
 [Wiki](https://github.com/FaithBeam/ps-sims-widescreen-fixer/wiki)
+
+Credits
+=======
+
+[WSGF](http://www.wsgf.org/dr/sims)
