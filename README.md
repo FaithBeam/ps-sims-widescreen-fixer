@@ -41,3 +41,8 @@ Screenshots
 ===========
 
 [Wiki](https://github.com/FaithBeam/ps-sims-widescreen-fixer/wiki)
+
+Credits
+=======
+
+[WSGF](http://www.wsgf.org/dr/sims)
