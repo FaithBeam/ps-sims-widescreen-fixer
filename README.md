@@ -16,6 +16,8 @@ Requirements
 Resolutions Supported
 =====================
 
+The highest resolution I recommend is 1920x1080, any resolution larger than that makes everything too small to see clearly. If you check out the screenshots, you'll notice that the larger the resolution, the further the camera is pulled out.
+
 * 3840x2160
 * 2560x1440
 * 1920x1080
