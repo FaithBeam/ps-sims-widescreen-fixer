@@ -30,9 +30,7 @@ function Main {
     CopyGraphics $folder
 }
 
-function BackupFile(
-    [string]$path
-) {
+function BackupFile([string]$path) {
     $backup = $path.Substring(0, $path.LastIndexOf('.')) + " Backup.exe"
     Copy-Item $path $backup
     if (!(Test-Path $backup)) {
