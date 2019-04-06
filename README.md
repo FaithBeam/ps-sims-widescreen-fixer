@@ -34,3 +34,8 @@ Get-Help ps-sims-widescreen-fixer.ps1
 ```
 .\ps-sims-widescreen-fixer.ps1 -path "C:\Program Files (x86)\Maxis\The Sims\Sims.exe" -resolution "1920x1080"
 ```
+
+Screenshots
+===========
+
+[Wiki](https://github.com/FaithBeam/ps-sims-widescreen-fixer/wiki)
