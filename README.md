@@ -31,7 +31,7 @@ Usage
 Get-Help ps-sims-widescreen-fixer.ps1
 ```
 
-**Open PowerShell as administrator**
+**Open PowerShell as administrator and enter:**
 
 ```
 .\ps-sims-widescreen-fixer.ps1 -path "C:\Program Files (x86)\Maxis\The Sims\Sims.exe" -resolution "1920x1080"
