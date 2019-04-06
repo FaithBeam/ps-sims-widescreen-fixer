@@ -5,7 +5,7 @@ This script hex edits *The Sims: Complete Collection* Sims.exe to use custom res
 
 1. Create a backup of Sims.exe named Sims Backup.exe
 2. Hex edit Sims.exe with an accepted resolution
-3. Install DGVoodoo2 if necessary (Resolutions greater than 1920x1080 or if forced with -forceVoodoo)
+3. Install [DGVoodoo2](http://dege.freeweb.hu/dgVoodoo2/dgVoodoo2.html) if necessary (Resolutions greater than 1920x1080 or if forced with -forceVoodoo)
 4. Copy the proper graphics files to The Sims UIGraph directory
 
 Resolutions Supported
