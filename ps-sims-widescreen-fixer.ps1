@@ -68,18 +68,20 @@ function GetHexHeight {
 }
 
 function InstallDgVoodoo2([string]$folder) {
-    $urls = "http://dege.freeweb.hu/dgVoodoo2/D3DCompiler_43.zip", "http://dege.freeweb.hu/dgVoodoo2/D3DCompiler_47.zip", "http://dege.freeweb.hu/dgVoodoo2/dgVoodoo2_55_4.zip"
+    $urls = "http://dege.freeweb.hu/dgVoodoo2/D3DCompiler_43.zip", "http://dege.freeweb.hu/dgVoodoo2/D3DCompiler_47.zip", "http://dege.freeweb.hu/dgVoodoo2/dgVoodoo2_62_1.zip"
     foreach ($url in $urls) {
         $downloaded = $url.Substring($url.LastIndexOf('/'))
         Invoke-WebRequest -Uri $url -OutFile $downloaded
         Expand-Archive -Path $downloaded -DestinationPath $folder -Force
         Remove-Item $downloaded
     }
-    Copy-Item -Path "$folder\MS\*" -Destination $folder -Force
+    Copy-Item -Path "$folder\MS\x86\*" -Destination $folder -Force
     (Get-Content -Path "$folder\dgVoodoo.conf") -replace "dgVoodooWatermark                   = true", "dgVoodooWatermark                   = false" | Set-Content -Path "$folder\dgVoodoo.conf"
     Remove-Item "$folder\3Dfx" -Force -Recurse
     Remove-Item "$folder\Doc" -Force -Recurse
     Remove-Item "$folder\MS" -Force -Recurse
+    Remove-Item "$folder\x64" -Force -Recurse
+    Remove-Item "$folder\x86" -Force -Recurse
 }
 
 function EditFile(
