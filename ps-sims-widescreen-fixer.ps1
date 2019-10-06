@@ -5,7 +5,7 @@ param(
     [string]$path,
     # Resolution
     [Parameter(Mandatory = $true)]
-    [ValidateSet("3840x2160", "2560x1440", "1920x1080", "1366x768", "1280x720")]
+    [ValidateSet("3840x2160", "3440x1440", "2560x1440", "2560x1080", "1920x1080", "1366x768", "1280x720")]
     [string]$resolution,
     # Skip md5 hash check
     [Parameter(Mandatory = $false)]
@@ -24,7 +24,7 @@ function Main {
     $width = GetHexWidth
     $height = GetHexHeight
     EditFile $path $width $height
-    if ($resolution -eq "3840x2160" -or $resolution -eq "2560x1440" -or $forceVoodoo) {
+    if ($resolution -eq "3840x2160" -or $resolution -eq "3440x1440" -or $resolution -eq "2560x1440" -or $resolution -eq "2560x1080" -or $forceVoodoo) {
         InstallDgVoodoo2 $folder
     }
     CopyGraphics $folder
@@ -47,6 +47,7 @@ function GetHexWidth {
     $width = $resolution.Split('x')[0]
     switch ($width) {
         "3840" { return 0x00, 0x0F }
+        "3440" { return 0x70, 0x0D }
         "2560" { return 0x00, 0x0A }
         "1920" { return 0x80, 0x07 }
         "1366" { return 0x56, 0x05 }
@@ -80,8 +81,8 @@ function InstallDgVoodoo2([string]$folder) {
     Remove-Item "$folder\3Dfx" -Force -Recurse
     Remove-Item "$folder\Doc" -Force -Recurse
     Remove-Item "$folder\MS" -Force -Recurse
-    Remove-Item "$folder\x64" -Force -Recurse
-    Remove-Item "$folder\x86" -Force -Recurse
+    # Remove-Item "$folder\x64" -Force -Recurse
+    # Remove-Item "$folder\x86" -Force -Recurse
 }
 
 function EditFile(
