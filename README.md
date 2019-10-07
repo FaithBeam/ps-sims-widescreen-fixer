@@ -18,11 +18,18 @@ Resolutions Supported
 
 The highest resolution I recommend is 1920x1080, any resolution larger than that makes everything too small to see clearly. If you check out the screenshots, you'll notice that the larger the resolution, the further the camera is pulled out. The fps goes down the drain starting at 2560x1440 so expect framerates in the single digits.
 
+**16:9**
+
 * 3840x2160
 * 2560x1440
 * 1920x1080
 * 1366x768
 * 1280x720
+
+**21:9**
+
+* 3440x1440
+* 2560x1080
 
 Usage
 =====
