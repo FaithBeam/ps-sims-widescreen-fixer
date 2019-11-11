@@ -1,6 +1,8 @@
 ps-sims-widescreen-fixer
 =======================
 
+**This repository is now unmaintained in favor of https://github.com/FaithBeam/Sims-1-Complete-Collection-Widescreen-Patcher**
+
 This script hex edits *The Sims: Complete Collection* Sims.exe to a custom resolution. You need the No-CD patch with MD5 hash 42F9A3E11BD1A03515C77777CB97B5BC for this script to work. Running this will:
 
 1. Create a backup of Sims.exe named Sims Backup.exe
